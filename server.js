@@ -9,6 +9,10 @@ const { startHealthChecks } = require('./services/healthChecker');
 const app = express();
 app.use(bodyParser.json());
 
+// const token = jwt.sign({ sub: "user123" }, "eternal-peace", { expiresIn: "1h" });
+
+// console.log("token*****",token);
+
 app.get('/', (req, res)=>{
   res.send("API Gateway up and running!")
 });
